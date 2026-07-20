@@ -341,7 +341,7 @@
     // NOT a confirmed sale. Purchases are reported separately via
     // server-side Events API once an order is confirmed.
     if (window.ttq) {
-      ttq.track('Contact', { content_name: 'Celestella WhatsApp Chat' });
+      ttq.track('InitiateCheckout', { content_name: 'Celestella WhatsApp Chat', value: 0, currency: 'PKR' });
     }
 
     setTimeout(function () {
